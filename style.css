@@ -2,7 +2,7 @@ html, body{
   width: 100%;
   height: 100%;
   margin: 0;
-  font-family: "Open Sans",Arial,sans-serif;
+  font-family: "Open Sans",sans-serif;
 }
 
 #header{
@@ -12,10 +12,9 @@ html, body{
 }
 
 #navbar{
-  padding: 0;
   text-align: center;
   height: 50px;
-  background-color: #1e77a5;
+  background-color: #085675;
   width: 100%;
   border-bottom: 1px solid black;
 }
@@ -25,28 +24,29 @@ html, body{
   display: inline-block;
 }
 
+#navbar ul{
+  font-size:0; /* Hack for whitespace caused by inline-block */
+}
+
 #navbar li{
-  margin-left: 0;
-  list-style-type: none;
+  padding-left: 50px;
+  padding-right: 50px;
   height: 50px;
-  border-right:  1px solid #28839e;
+  border-right: 1px solid #0c4455;
 }
 
 #navbar li:hover{
-  background-color: #193294;
+  background-color: #0a7983;
 }
 
-a.nav{
-  width: inherit;
-  padding-left: 50px;
+#navbar a{
   position: relative;
   top: 25%;
   transform: translateY(-25%);
-  text-decoration: none;
-  color: white;
-  font-family: "Open Sans",Arial,sans-serif;
+  font-family: 'Open Sans Condensed',Arial,sans-Serif;
   font-weight: bold;
-  font-size: 14px;
-  margin-right: 50px;
-  white-space: nowrap;
+  font-size: .938rem;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
 }
