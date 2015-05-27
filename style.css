@@ -5,12 +5,6 @@ html, body{
   font-family: "Open Sans",sans-serif;
 }
 
-#header{
-  background-color: black;
-  min-height: 10%;
-  width: 100%;
-}
-
 #navbar{
   text-align: center;
   height: 50px;
@@ -49,4 +43,8 @@ html, body{
   text-transform: uppercase;
   color: white;
   text-decoration: none;
+}
+
+.active {
+  border-bottom: 5px solid #0c96c0;
 }
