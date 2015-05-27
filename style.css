@@ -1,50 +1,155 @@
-html, body{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  font-family: "Open Sans",sans-serif;
+@media screen and (max-width: 400px) {
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: "Open Sans",sans-serif;
+  }
+
+  #navbar{
+    background-color: #085675;
+    min-width: 100%;
+    max-height: 20px;
+    border-bottom: 1px solid black;
+  }
+
+  #navbar li, #navbar ul{
+    float: left;
+  }
+
+  #navbar a{
+    position: relative;
+    top: 25%;
+    transform: translateY(-25%);
+    font-family: 'Open Sans Condensed',Arial,sans-Serif;
+    font-weight: bold;
+    font-size: .938rem;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+  }
+
+  #navbar .active a{
+    color: black;
+  }
 }
 
-#navbar{
-  text-align: center;
-  height: 50px;
-  background-color: #085675;
-  width: 100%;
-  border-bottom: 1px solid black;
+@media screen and (max-width: 580px) {
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: "Open Sans",sans-serif;
+  }
+
+  #navbar{
+    text-align: center;
+    background-color: #085675;
+    height: 50px;
+    min-width: 100%;
+    border-bottom: 1px solid black;
+  }
+
+  #navbar li, #navbar ul{
+    margin-top: 0;
+    display: inline;
+  }
+
+  #navbar li{
+    padding-left: 20px;
+  }
+
+  #navbar a{
+    position: relative;
+    top: 25%;
+    transform: translateY(-25%);
+    font-family: 'Open Sans Condensed',Arial,sans-Serif;
+    font-weight: bold;
+    font-size: .938rem;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+  }
+
+  #navbar .active a{
+    color: black;
+  }
+
 }
 
-#navbar li, #navbar ul{
-  margin-top: 0;
-  display: inline-block;
-}
+@media screen and (min-width: 600px) {
+  html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: "Open Sans",sans-serif;
+  }
 
-#navbar ul{
-  font-size:0; /* Hack for whitespace caused by inline-block */
-}
+  #wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    height: 85%;
+    width: 95%;
+    background-color: rgba(200, 200, 200, 0.14);
+    border: 1px solid rgba(209, 209, 209, 0.58);
+  }
 
-#navbar li{
-  padding-left: 50px;
-  padding-right: 50px;
-  height: 50px;
-  border-right: 1px solid #0c4455;
-}
+  #leftdiv{
+    float: left;
+    width: 45%;
+    height: 100%;
+  }
 
-#navbar li:hover{
-  background-color: #0a7983;
-}
+  #rightdiv{
+    float: right;
+    width: 50%;
+    height: 100%;
+    margin-left: 5px;
+  }
 
-#navbar a{
-  position: relative;
-  top: 25%;
-  transform: translateY(-25%);
-  font-family: 'Open Sans Condensed',Arial,sans-Serif;
-  font-weight: bold;
-  font-size: .938rem;
-  text-transform: uppercase;
-  color: white;
-  text-decoration: none;
-}
+  #navbar{
+    text-align: center;
+    min-height: 50px;
+    background-color: #085675;
+    min-width: 100%;
+    border-bottom: 1px solid black;
+  }
 
-.active {
-  border-bottom: 5px solid #0c96c0;
+  #navbar li, #navbar ul{
+    margin-top: 0;
+    display: inline-block;
+  }
+
+  #navbar ul{
+    font-size:0; /* Hack for whitespace caused by inline-block */
+  }
+
+  #navbar li{
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 50px;
+    border-right: 1px solid #0c4455;
+  }
+
+  #navbar li:hover{
+    background-color: #0a7983;
+  }
+
+  #navbar a{
+    position: relative;
+    top: 25%;
+    transform: translateY(-25%);
+    font-family: 'Open Sans Condensed',Arial,sans-Serif;
+    font-weight: bold;
+    font-size: .938rem;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+  }
+
+  #navbar .active {
+    background-color: #0c96c0;
+  }
+
 }
