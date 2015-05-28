@@ -173,14 +173,13 @@
     width: 40%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10%;
   }
 
   #main-right img{
-    display: inline-block;
-    margin-left: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .caption {
-    display: block;
-}
 }
