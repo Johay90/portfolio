@@ -8,6 +8,59 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.canvasjs.min.js"></script>
+
+        <script type="text/javascript">
+        window.onload = function () {
+      var chart = new CanvasJS.Chart("chartContainer", {
+          title: {
+              text: "Knowledge",
+              fontFamily: 'Open Sans Condensed',
+              fontColor: "black",
+              fontSize: 22
+
+          },
+          animationEnabled: true,
+          axisY: {
+              tickThickness: 0,
+              lineThickness: 0,
+              valueFormatString: " ",
+              gridThickness: 0
+          },
+          axisX: {
+              tickThickness: 0,
+              lineThickness: 0,
+              labelFontSize: 12,
+              labelFontColor: "black"
+
+          },
+          data: [
+          {
+              indexLabelFontSize: 14,
+              toolTipContent: "<span style='\"'color: {color};'\"'><strong>{indexLabel}</strong></span><span style='\"'font-size: 20px; color:black '\"'><strong>{y}</strong></span>",
+
+              indexLabelPlacement: "inside",
+              indexLabelFontColor: "white",
+              indexLabelFontWeight: 600,
+              indexLabelFontFamily: "Open Sans",
+              color: "#085675",
+              type: "bar",
+              dataPoints: [
+                  { y: 40, label: "40%", indexLabel: "HTML/CSS" },
+                  { y: 5, label: "5%", indexLabel: "JS" },
+                  { y: 20, label: "20%", indexLabel: "PHP" }
+
+
+              ]
+          }
+          ]
+      });
+
+      chart.render();
+  }
+          </script>
+
     <div id="navbar">
       <ul>
         <a href="index.html"><li class="active">Home</a></li>
@@ -20,36 +73,30 @@
       <div id="main">
         <h1 class="title">About me</h1><hr>
         <div id="main-left">
-          <p>Lorem ipsum dolor sit amet, eum possit contentiones no. Sit graece postea senserit an, quo id postulant intellegam. At autem delectus hendrerit pri. Viderer admodum quo et. Ceteros epicuri lobortis ius in. Et nec ludus debitis, ei nostro audire perpetua eos. Id vim ponderum iudicabit principes, ea eos odio audiam honestatis.</p>
+          <p> My name is Jonathan Mummery, I'm 24 years young and I'm currently looking for an opportunity in a apprentice role within web development. I'm hugely passionate about all things around web development and the main goal is to be a web developer as I move forward.</p>
 
-          <p>Atqui salutatus aliquando mea ne, ne dicat velit ius. Ea fierent senserit sea, nemore adversarium voluptatibus cu mel, ex quo everti numquam. Sed no maluisset assueverit, te has sumo dolorum praesent. Omnes denique qualisque at cum, cu erant libris accommodare sea.</p>
+          <p>I enjoy coding, learning new technologies (language, frameworks), making websites, working on web apps etc. I have quite a few "bedroom projects" which you can visit by clicking the project link above, or by clicking my Github by the right of this text. I work on my personal projects every single day which can be seen via my Github commits.</p>
 
-          <p>Ei vel dolor dictas, erat invenire imperdiet qui ea. Dolor consequat honestatis duo te. Sumo iuvaret laboramus vis at, ei latine ornatus efficiendi mea, ex vis malis accumsan. Ne nominavi iracundia vim, eam at virtute interesset. Denique constituam eam id, vel ignota quaerendum id. Per at minim delectus assentior.</p>
+          <p>  While I can't pretend to be able to code the next Google search engine algorithm at this stage - I do have all the necessary basic skills to become a developer either front-end or back-end in the future. I understand HTML5, CSS3, Javascript, and PHP to a basic level which does show in my current projects. I'm looking to gain new skills and push myself to the ultimate goal of becoming a professional developer. I have also attached my Code Academy profile towards the right of this page. </p>
 
-          <p>Nec ne affert oratio evertitur. Omnium laboramus omittantur vel ei, dictas omnium scripta mel ad. Sea purto possit constituam te. Mea rebum posidonium deterruisset et, et sanctus impedit duo, qui timeam iisque te.</p>
+          <p>  Due to my overwhelmingly interest in the industry I have a massive willingness to learn and succeed as a web developer. </p>
 
-          <p>Usu an nisl dissentiet, ubique nemore timeam ius id. Inani elitr dolorem sea ad. Maiorum propriae voluptua vis et, iriure feugiat facilisis ei sit. Iudico adversarium et usu.</p>
-
-          <p>Atqui salutatus aliquando mea ne, ne dicat velit ius. Ea fierent senserit sea, nemore adversarium voluptatibus cu mel, ex quo everti numquam. Sed no maluisset assueverit, te has sumo dolorum praesent. Omnes denique qualisque at cum, cu erant libris accommodare sea.</p>
-
-          <p>Ei vel dolor dictas, erat invenire imperdiet qui ea. Dolor consequat honestatis duo te. Sumo iuvaret laboramus vis at, ei latine ornatus efficiendi mea, ex vis malis accumsan. Ne nominavi iracundia vim, eam at virtute interesset. Denique constituam eam id, vel ignota quaerendum id. Per at minim delectus assentior.</p>
-
-          <p>Nec ne affert oratio evertitur. Omnium laboramus omittantur vel ei, dictas omnium scripta mel ad. Sea purto possit constituam te. Mea rebum posidonium deterruisset et, et sanctus impedit duo, qui timeam iisque te.</p>
-
-          <p>Usu an nisl dissentiet, ubique nemore timeam ius id. Inani elitr dolorem sea ad. Maiorum propriae voluptua vis et, iriure feugiat facilisis ei sit. Iudico adversarium et usu.</p>
-
+          <div id="chartContainer" style="height: 300px; width: 100%;">
+        	</div>
         </div>
 
         <div id="main-right">
 
-          <img src="https://iwantmyname.com/images/logo-developer-github.png" alt="Image" height="128" width="128"><Br /><br />
+         <img src="https://iwantmyname.com/images/logo-developer-github.png" alt="Image" height="128" width="128"><Br /><br />
 
-          <img src="http://izmirairportcarrentals.com/home/logo_facebook.png" alt="Image" height="128" width="128"><Br /><br />
+         <img src="http://1.bp.blogspot.com/-q9lgF3ExGo4/ToDulZ5VJuI/AAAAAAAABs0/5TGtduP2MP0/s1600/128.png" alt="Image" height="128" width="128"><Br /><br />
 
-          <img src="http://www.urbanforestrysouth.org/resources/library/ttresources/twitterFollowMeLogo.png" alt="Image" height="128" width="128"><Br /><br />
+         <img src="http://izmirairportcarrentals.com/home/logo_facebook.png" alt="Image" height="128" width="128"><Br /><br />
+
+         <img src="http://www.urbanforestrysouth.org/resources/library/ttresources/twitterFollowMeLogo.png" alt="Image" height="128" width="128"><Br /><br />
 
 
-        </div>
+       </div>
 
     </div>
 
