@@ -6,22 +6,22 @@
     font-family: "Open Sans",sans-serif;
   }
 
-  #navbar{
+  nav{
     background-color: #085675;
     min-width: 100%;
     max-height: 20px;
     border-bottom: 1px solid black;
   }
 
-  #navbar li, #navbar ul{
+  nav li, nav ul{
     float: left;
   }
 
-  #navbar ul{
+  nav ul{
     margin-left: 15%;
   }
 
-  #navbar a{
+  nav a{
     position: relative;
     top: 25%;
     transform: translateY(-25%);
@@ -33,11 +33,11 @@
     text-decoration: none;
   }
 
-  #navbar .active a{
+  nav .active a{
     color: black;
   }
 
-  #main{
+  section{
     margin-left: 15px;
     margin-right: 15px;
     font-family: 'Open Sans',sans-Serif;
@@ -49,7 +49,7 @@
     font-size: 35px;
   }
 
-  #main-right img {
+  aside img {
     display: block;
     margin: 0 auto;
   }
@@ -93,7 +93,7 @@
     color:black;
   }
 
-  #main p{
+  section p{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -108,7 +108,7 @@
     font-family: "Open Sans",sans-serif;
   }
 
-  #navbar{
+  nav{
     text-align: center;
     background-color: #085675;
     height: 50px;
@@ -116,16 +116,16 @@
     border-bottom: 1px solid black;
   }
 
-  #navbar li, #navbar ul{
+  nav li, nav ul{
     margin-top: 0;
     display: inline;
   }
 
-  #navbar li{
+  nav li{
     padding-left: 20px;
   }
 
-  #navbar a{
+  nav a{
     position: relative;
     top: 25%;
     transform: translateY(-25%);
@@ -137,11 +137,11 @@
     text-decoration: none;
   }
 
-  #navbar .active a{
+  nav .active a{
     color: black;
   }
 
-  #main{
+  section{
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -185,13 +185,13 @@
     color:black;
   }
 
-  #main p{
+  section p{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 300;
   }
 
-  #main-right img{
+  aside img{
     display: block;
     margin: 0 auto;
   }
@@ -208,7 +208,7 @@
 
   /* NAV BAR */
 
-  #navbar{
+  nav{
     text-align: center;
     min-height: 50px;
     background-color: #085675;
@@ -216,27 +216,27 @@
     border-bottom: 1px solid black;
   }
 
-  #navbar li, #navbar ul{
+  nav li, nav ul{
     margin-top: 0;
     display: inline-block;
   }
 
-  #navbar ul{
+  nav ul{
     font-size:0; /* Hack for whitespace caused by inline-block */
   }
 
-  #navbar li{
+  nav li{
     padding-left: 50px;
     padding-right: 50px;
     height: 50px;
     border-right: 1px solid #0c4455;
   }
 
-  #navbar li:hover{
+  nav li:hover{
     background-color: #0a7983;
   }
 
-  #navbar a{
+  nav a{
     position: relative;
     top: 25%;
     transform: translateY(-25%);
@@ -248,13 +248,13 @@
     text-decoration: none;
   }
 
-  #navbar .active {
+  nav .active {
     background-color: #0c96c0;
   }
 
   /* Content DIVS, WRAPPERS & STYLES */
 
-  #wrapper{
+  main{
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
@@ -262,14 +262,14 @@
     height: 100%;
   }
 
-  #main{
+  section{
     min-height: 140%;
     width: 100%;
     background-color: rgba(200, 200, 200, 0.14);
     border: 1px solid rgba(209, 209, 209, 0.58);
   }
 
-  #main h1.title{
+  section h1.title{
     text-align: center;
     margin-top: 2px;
     margin-bottom: 5px;
@@ -316,25 +316,25 @@
     color:black;
   }
 
-  #main p{
+  section p{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 300;
   }
 
-  #main-left{
+  article{
     float: left;
     width: 60%;
   }
 
-  #main-left p{
+  article p{
     margin-left: 20px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 300;
   }
 
-  #main-right{
+  aside{
     float: right;
     width: 40%;
     margin-left: auto;
@@ -342,7 +342,7 @@
     margin-top: 7%;
   }
 
-  #main-right img{
+  aside img{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -363,7 +363,7 @@
 
   /* NAV BAR */
 
-  #navbar{
+  nav{
     text-align: center;
     min-height: 50px;
     background-color: #085675;
@@ -371,27 +371,27 @@
     border-bottom: 1px solid black;
   }
 
-  #navbar li, #navbar ul{
+  nav li, nav ul{
     margin-top: 0;
     display: inline-block;
   }
 
-  #navbar ul{
+  nav ul{
     font-size:0; /* Hack for whitespace caused by inline-block */
   }
 
-  #navbar li{
+  nav li{
     padding-left: 50px;
     padding-right: 50px;
     height: 50px;
     border-right: 1px solid #0c4455;
   }
 
-  #navbar li:hover{
+  nav li:hover{
     background-color: #0a7983;
   }
 
-  #navbar a{
+  nav a{
     position: relative;
     top: 25%;
     transform: translateY(-25%);
@@ -403,13 +403,13 @@
     text-decoration: none;
   }
 
-  #navbar .active {
+  nav .active {
     background-color: #0c96c0;
   }
 
   /* Content DIVS, WRAPPERS & STYLES */
 
-  #wrapper{
+  main{
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
@@ -417,7 +417,7 @@
     width: 55%;
   }
 
-  #main{
+  section{
     width: 100%;
     height: 100%;
     background-color: rgba(200, 200, 200, 0.14);
@@ -427,7 +427,7 @@
   }
 
 
-  #main h1.title{
+  section h1.title{
     text-align: center;
     margin-top: 2px;
     margin-bottom: 5px;
@@ -474,25 +474,25 @@
     color:black;
   }
 
-  #main p{
+  section p{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 300;
   }
 
-  #main-left{
+  article{
     float: left;
     width: 60%;
   }
 
-  #main-left p{
+  article p{
     margin-left: 20px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 300;
   }
 
-  #main-right{
+  aside{
     float: right;
     width: 40%;
     margin-left: auto;
@@ -500,7 +500,7 @@
     margin-top: 7%;
   }
 
-  #main-right img{
+  aside img{
     display: block;
     margin-left: auto;
     margin-right: auto;
